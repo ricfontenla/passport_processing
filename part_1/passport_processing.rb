@@ -15,7 +15,7 @@ require_relative './lib/passport_organizer.rb'
 
 puts 'Passport Processing'
 
-file = File.read('./../data/passports.bat')
+file = File.read('./../data/passports.txt')
 csv = CSV.parse(file)
 
 pass_valid = PassportOrganizer.new(csv).verification
